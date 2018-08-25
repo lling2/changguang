@@ -1,0 +1,668 @@
+* { padding: 0; margin: 0; list-style: none; border: none;}
+body { font-size: 10px; background: #ecebeb; font-family:"微软雅黑";}
+img { max-width: 100%;}
+a { text-decoration:none!important;}
+input { background:transparent;}
+.container-fluid { padding: 0; margin: 0;}
+.text-aline{ text-align:center;}
+.textl{ text-align:left;}
+.text_width { white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.line-height55{ line-height:55px; font-size:14px;}
+.line-height30{ line-height:30px; font-size:14px;}
+.border{ border-radius:3px;}
+.font16{ font-size:16px; line-height:25px;}
+.fonts16{ font-size:16px;}
+.font14{ font-size:14px; line-height:25px;}
+.pr15{ padding-right:15px;}
+.pl10{ padding-left:10px;}
+.pl20{ padding-left:20px;}
+.margin5{ margin-right5px;}
+.gray_color{ color:#666;}
+.marginbottom5{ margin-bottom:5px;}
+.padding{ padding:6px 10px;}
+.img-rounded{ border-radius:3px;}
+.img-round{ border-radius:50%;}
+.pad5{ padding-left:5px; padding-right:5px;}
+.pad10{ padding-left:10px; padding-right:10px;}
+.margin5{ margin-left:-5px; margin-right:-5px;}
+.colorblack{ color:#333; font-size:14px;}
+.colorblack a{ color:#333; font-size:14px;}
+.colorblack a:hover{ color:#333; font-size:14px;}
+.more{ font-size:16px; color:#007aff; }
+.more a{ font-size:16px; color:#007aff; }
+.more a:hover{ font-size:16px; color:#007aff; }
+.color6{ color:#333;}
+.color0{ color:#333;}
+.color0 a{ color:#333;}
+.color0 a:hover{ color:#333;}
+.br_actives{ border-right:none !important; background:#fff !important;  border-radius:none !important; height:50px; line-height:25px; color:#333;}
+.borderight{border-radius:0; background:#ecebeb; border-radius:none; border-right:none; height:50px; line-height:25px; color:#333;}
+.line-height55{ line-height:55px;}
+/* 横屏 */
+
+.header { line-height:55px!important; height:55px!important; overflow: hidden!important;}
+.fenlei { margin-top:60px!important; padding-top:20px!important;}
+.stu2 { padding-left:12%!important;}
+.stu2 > div:nth-child(2) { margin-left:11%!important;}
+
+/* 置顶 */
+#top {}
+#top .btn {color: #fff; background: #001733; z-index: 10; position: fixed; bottom: 20px; right: 5px;}
+#main1 { padding-top: 10px;}
+#main1 .more { color: #001733; padding-bottom: 6px; float: right;}
+/* iPad */
+
+    .header {
+        line-height:55px!important;
+        height:55px!important;
+        overflow: hidden!important;
+    }
+    .c_list { margin-top: 55px;}
+    .header > div { line-height:55px;}
+    .te1_img { height:300px!important;}
+    .new { height:130px!important;}
+    .new img { height:120px!important;}
+    .new > div p:nth-child(1) { height:80px!important;}
+    .fenlei { margin-top:55px!important; padding-top:15px!important;}
+    .fenlei > div { margin-bottom:20px!important;}
+    .fenlei > div > img { height:100px!important;}
+    .foot_list { height:55px!important;}
+    .foot_list li a div { font-size:16px!important;}
+    .foot_list span { font-size:14px!important;}
+    .stu2 { padding-left:15%!important;}
+    .stu2 > div:nth-child(2) { margin-left:11%!important;}
+    .teacher > div { height:300px!important;}
+    .teacher > div > div > p { height:170px!important;
+        -webkit-line-clamp: 6!important;
+        overflow: hidden;!important;
+        }
+    .course_banner div:nth-child(3) { margin:15px auto 0!important; width:30%!important;}
+    .course > div { height:185px!important;}
+
+/*--------------------- banner插件效果 ----------------------*/
+.banner {position:absolute; height:170px; top:55px; width:100%!important;}
+/*----------------------- 分类 ----------------------*/
+.fenlei { width:100%; margin:52px 0 15px; background:#fff; overflow: hidden; padding-top:10px;}
+.fenlei > div { width:46%; margin-bottom:8px; margin-left:2.6%; float:left; position:relative;}
+.fenlei > div > a > img {width:100%; height:auto; border-radius:5px;}
+.fenlei > div > a >div { position:absolute; left:35%; top:35%; color:#fff; font-size:20px;}
+/*------------------ 广告 --------------------*/
+.ad { width:100%;  padding-top:10px;}
+/*----------------------- 精品课程 ----------------------------*/
+.con1 { padding:8px 4% 0; background:#fff!important; margin:10px 0; width:100%; overflow: hidden;}
+.jpkc { padding-left:10px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    width:100%;
+    line-height:18px;
+    float:left;
+    height:18px;
+    clear:both;
+    font-size:16px;
+}
+.gd { float:right; padding-bottom:10px; font-size:14px; color:#666;}
+.con1 > a > img { width:48%; float:left;}
+.con1 > a > img:nth-child(2) { margin-right:4%;}
+.con1 > ul { clear:both; height:50px; border-top:1px solid #ddd; width:100%;}
+.con1 > ul:nth-child(1) { border-top:none;}
+.con1 > ul li { float:left;  width:33.3%;}
+.con1 > ul a { display: block; line-height: 50px; width:100%; font-size:14px; color:#666; text-align:center; background:url("../img/bg2.gif")right 18px no-repeat; border-bottom:1px solid #ddd;}
+.con1 > ul li:nth-child(3n) a { background:none;}
+
+/*----------------- 金牌讲师 -------------------------*/
+.te1 { width:48%; float:left; margin-bottom:20px; padding-left:15px; position:relative; }
+.te1:nth-child(2n) { margin-right:4%; margin-left:2%;}/* 左边的 */
+.te1 .te1_img { width:100%; height:170px; border-radius:5px;}
+.te1 .te1_con {
+    height:60px;
+    line-height:25px;
+    text-align: center;
+    width:100%;
+    color:#393939;
+    }
+.te1 .te1_con > div { font-size:16px; padding-top:5px;}
+.te1 .te1_con > div a { color:#393939;}
+.te1 .te1_con > span { width:90%; display: block;}
+ /*--------------------- 学员就业 -----------------------*/
+.stu2 { width:100%;
+    height:200px;
+    padding:20px 0 0 5%;
+    border:1px solid #DDd;
+    background:#fff;
+    margin-bottom:15px;
+    clear:both;
+    }
+.stu2 > div { float:left; width:30%;}
+.stu2 > div:nth-child(1) div { line-height:25px; font-size:16px;}
+.stu2 > div:nth-child(1) div:nth-child(2) { color:#999;}
+.stu2 > div:nth-child(1) img { margin-top:10px;}
+.stu2 > div:nth-child(2) { margin-left:15%; margin-top:40px;}
+.stu2 > div:nth-child(2) > div:nth-child(1) > img { border-bottom:2px solid #DDD; width:120px; height:60px;}
+.stu2 > div:nth-child(2) div:nth-child(2) { text-align:center; line-height:25px; color:#337ab7;}
+.stu2 > div:nth-child(2) div:nth-child(2) div:nth-child(2) { font-size:18px; font-weight:bold;}
+/*--------------------- 公司资讯 --------------------*/
+.new { margin:15px 0;
+    height:90px;
+    width:100%;
+    clear:both;
+    color:#666;
+    border-bottom:1px solid #ddd;
+    padding-bottom:5px;
+    }
+.new:nth-last-child(1) { border-bottom:none; margin-bottom:0px;}
+.new img { float:left; width:45%; height:80px; padding-bottom:5px;}
+.new > div { float:left; margin-left:3%; width:50%;}
+.new > div p { margin-bottom:0;}
+.new > div p a { color:#393939;}
+.new > div p:nth-child(1) { font-size:16px;
+    color:#393939;
+    height:40px;
+    margin-bottom:15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;}
+.new > div > div:nth-child(2) { height:16px!important;}
+.new > div > div:nth-child(2) > div:nth-child(1) { font-size:14px; height:16px; float:left; width:20%; color:#999;}
+.new > div > div:nth-child(2) > div:nth-child(1) input {}
+.new > div > div:nth-child(2) > div:nth-child(2) { height:16px; color:#999;}
+.new > div div:nth-child(2) div span input { margin-left:4px; color:#999;}
+.new > div div:nth-child(2) div:nth-child(2) {float:left; padding-left:10px;}
+
+/*--------------------- 底部横条+顶部横条 ----------------*/
+.hf { position:fixed; top:0;z-index: 100; width:100%;}
+.foot_list { width:100%;
+    height:45px;
+    background:#FFF;
+    margin:0;
+    padding-top:4px;
+    border-top:1px solid #Ddd;
+    position:fixed;
+    bottom:0;
+    z-index: 100;
+    }
+.foot_list li { float:left; width:33.3%; text-align:center;}
+.foot_list li a { color:#393939;display: block;}
+.foot_list span { font-size:12px;}
+.header { width:100%;
+    background:#fff;
+    line-height:55px;
+    height:55px;
+    overflow: hidden;
+    font-size:18px;
+    color:#333;
+    text-align: center;
+    position:fixed;
+    top:0;
+    z-index: 100; border-bottom:#ccc solid 1px;
+    }
+.header div { float:left; font-size:20px; color:#fff;}
+.header a { float:left; font-size:18px; color:#fff;}
+
+/* 全部内容 */
+.con_list { margin-top:45px; width:100%;}
+.con_list a {
+    display: block;
+    width:100%;
+    height:100px;
+    border-bottom:1px solid #ddd;
+    border-right:1px solid #ddd;
+    color:#393939;
+    }
+.con_list li:nth-child(3n) a { border-right:1px solid #fff;}
+.con_list li { float:left; width:33.3%;}
+.con_list li a img { width:60px; height:60px; margin-left:25%; margin-top:5px;}
+.con_list li a div { width:100%; line-height:20px; text-align:center;}
+
+/* 主色调 */
+.main_color { color:#2d4fa1!important;}
+.fz16 { font-size:16px; color:#272636;}
+.tit_2 { clear:both;
+    height:23px;
+    margin-top: 5px;
+    margin-bottom:10px;
+    border-left:3px solid #E04D9B;
+}
+/*------------------------- 课程二级页 -----------------------*/
+.c_banner { width:100%;  margin-top:55px;}
+/* 最新开班 */
+.kb { width:100%; padding-left:3.3%; line-height:25px;font-size:16px; font-weight:bold; margin-top:10px;margin-bottom:5px;}
+.kb_list { width:95%;
+    border-radius:4px;
+    background:#fff;
+    overflow: hidden;
+    margin:0 auto;
+    padding:15px 15px 5px;}
+.kb_list li { clear:both; width:100%; margin-bottom:10px; height:25px;}
+.c_gd { border-top:1px solid #DDD; text-align: center; padding-top:5px}
+.kb_list li span:nth-child(1) { float:left;
+    width:20px;
+    color:#999;
+    text-align:center;
+    border:1px solid #ddd;
+    line-height:20px;
+    }
+.kb_list li span:nth-child(2) { float:left; margin:0 10px 0 15px; font-size: 14px; }
+.kb_list li a { float:right;
+    border:1px solid #2d4fa1;
+    border-radius:2px;
+    color:#2d4fa1;
+    padding:0 10px;
+    font-size:12px;
+    }
+.c_d_cTip { padding:1.8% 0 4% 0;}
+.c_d_cTip li { float:left; line-height:24px; font-size:14px; color:#666; padding-right:5%;}
+.cborder{ font-size:16px; border:1px solid #edf1f2; padding:10px;}
+
+/* 课程小块 */
+.course1 { margin-bottom: 20px;}
+.course1 .box { height: 45px; background: rgba(255,255,255,.5);}
+.course1 .box a { color:#666; margin: 5px 5px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.course1 .box span { margin: 5px 5px; }
+.c_list { margin-top: 45px;}
+.c_list span {  line-height: 35px; padding: 6px 3% 7px 3%; background: #ddd;}
+.c_list .active{ background:#2d4fa1; color:#fff;}
+#box .row { display: none;}
+
+
+/*.course .box {*/
+    /*background:rgba(255,255,255,.6);*/
+    /*position:relative;*/
+    /*height:65px;*/
+    /*margin-bottom:10px;*/
+/*}*/
+/*.course > div {*/
+    /*margin-left:3.3%;*/
+    /*background:#ecebeb;*/
+    /*position:relative;*/
+    /*height:145px;*/
+    /*margin-bottom:10px;*/
+    /*}*/
+/*.course > div > img { width:120%; height:80%;}*/
+/*.course > div > div {*/
+    /*position:absolute;*/
+    /*border:none;*/
+    /*bottom:0;*/
+    /*z-index:12;*/
+    /*background:url("../img/bg-course.png")no-repeat;*/
+    /*width:92%;*/
+
+    /*}*/
+
+/*/!* 课程名称 *!/*/
+/*.course > div > div > div:nth-child(1) { font-size:16px; overflow: hidden; height:25px;}*/
+/*.course > div > div > div:nth-child(1) a { color:#666; margin: 0 7px;}*/
+/*/!* 课程类型和学习人数 *!/*/
+/*.course > div > div > div:nth-child(2) { font-size:14px; color:#ccc;line-height:20px; padding-top:5px;}*/
+/*.course > div > div > div:nth-child(2) span:nth-child(1) { float:left; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-left: 5px;}*/
+/*.course > div > div > div:nth-child(2) span:nth-child(1) input { margin-left:5px; height:14px;padding-bottom:2px;}*/
+/*.course > div > div > div:nth-child(2) span:nth-child(2) { float:right; margin-right: 5px;}*/
+/* 内容结束 */
+.end { width:100%; margin-top:10px; margin-bottom:10px; text-align:center; color:#ccc; clear:both;}
+/* 课程详情页 */
+.course_detail { margin-bottom: 33px;}
+
+
+/* 每个分块 */
+.course_detail > div { padding:5%; border-bottom:1px solid #ddd; font-size: 16px; color:#333;}
+.course_detail > div:nth-last-child(1) { border:none;}
+/* 分块标题 */
+.course_detail > div > div:nth-child(1) { font-weight:bold; font-size:18px;}
+.course_detail > div > p { color:#393939; padding-top:20px;}
+.course_banner { background: url("../img/c_d_bannerbg.jpg") no-repeat;
+    width:100%;
+    height:150px;
+    padding:10px 20px;
+    margin-top:45px;
+    color:#fff;
+    }
+.course_banner div:nth-child(1) { font-size:20px; padding-left:25px; padding-top:15px;}
+.course_banner div:nth-child(2) { font-size:16px;  padding-left:25px; padding-top:15px;}
+.course_banner div:nth-child(3) { padding:10px 15px;
+    line-height:20px;
+    width:45%;
+    font-size:16px;
+    margin:0 auto;
+    text-align: center;
+    border:1px solid #ddd;
+    border-radius:3px;
+	margin-top:5px;
+}
+/* 开始学习吧 */
+.xx { position:fixed; font-size:18px; bottom:0; line-height:45px; text-align:center; background:#2d4fa1; clear:both; width:100%; color:#fff;}
+/* 课程提纲 */
+.tg_list { background:#fff url("../img/c_bg.png")no-repeat; overflow: hidden;}
+.tg_list:nth-child(2) { margin-top:10px;}
+.tg_list li { padding-left:30px; line-height:30px;}
+.tg_list li:nth-child(1) { font-weight:bold; line-height:15px; padding-bottom:8px;}
+/*---------------------- 导师二级页 -----------------------*/
+.teacher { margin-top:60px;}
+.teacher > div { width:95%;
+    margin:0 auto 15px;
+    border-radius:3px;
+    padding:15px;
+    height:150px;
+    background:#fff;
+
+    }
+.teacher > div > img { float:left; width:35%; height:100%; border-radius:5px;}
+.teacher > div > div { float:left; width:65%; padding:0 0 8px 15px;}
+.teacher > div > div > div { font-weight:bold;}
+.teacher > div > div > div:nth-child(1) {
+    font-size:16px;
+    color:#333;
+    padding:5px 0;
+    }
+.teacher > div > div > div:nth-child(1) a { color:#666;}
+.teacher > div > div > div:nth-child(2) { color:#666;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-weight:normal;
+}
+
+.teacher > div > div > p { height:60px;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    color:#999;
+}
+/*---------------------- 导师详情 -----------------------*/
+.tea_xq { margin-top:35px;
+    width:100%;
+    position:relative;
+    border-bottom:1px solid #DDD;
+	background:#fff;
+	float:left;
+	padding:10px;
+    }
+.tea_xq > img { width:80px; height:90px; }
+.tea_xq > div:nth-child(2) { line-height:25px; font-size:16px; color:#fff; font-weight:bold;}
+.tea_xq > div:nth-child(3) {
+    color:#fff;
+}
+.tea_xq > ul { width:100%; position:absolute; bottom:-5px;}
+.tea_xq > ul li { float:left; width:33.3%; border-right:1px solid #ddd; text-align:center;}
+.tea_xq > ul li:nth-last-child(1) { border:none;}
+.tea_xq > ul li > div:nth-child(1) { 
+    height:16px;
+    color:#fff;
+}
+.tea_xq > ul li > div:nth-child(2) { font-weight:bold; color:#fff;font-size:16px;height:18px;}
+.tea_con {margin:15px auto;}
+.tea_con > div { padding-left:10px; font-weight:bold; padding-bottom:6px; line-height:35px;}
+.tea_con > p { background:#fff; padding:10px 15px; border-radius:5px; font-size:14px; line-height:30px;}
+/* 主讲课程 */
+.tea_mian { margin-top:5px;
+    margin-bottom:10px;
+    padding:5px 10px 10px;
+    background:#fff;
+    overflow: hidden;
+    }
+.tea_mian > div:nth-child(1) { height:25px;font-weight:bold;}
+.tea_mian > div:nth-child(2) > img { float:left; width:40%; height:80px;}
+.tea_mian > div:nth-child(2) > div { float:left; width:60%; padding-left:15px;}
+.tea_mian > div:nth-child(2) > div > div { width:50%; float:left;margin-top: 20px;}
+.tea_mian > div:nth-child(2) > div > div:nth-child(1) { border-right:1px solid #Ddd;}
+.tea_mian > div:nth-child(2) > div > div > div { line-height:20px; text-align:center;}
+.tea_mian > div:nth-child(2) > div > div > div:nth-child(1) { filter:alpha(opacity=50); /*IE*/  -moz-opacity:0.5;         /*火狐*/   opacity:0.5;//设置字体透明}
+
+/*-------------------- 新闻二级页 --------------------*/
+.a_nlist { width:100%; height:60px; border-bottom:1px solid #DDD; background:#fff;}
+.a_nlist li { float:left; width:50%; text-align:center; line-height:58px;}
+.a_nlist li a { color:#393939; font-size:16px;}
+.act { border-bottom:1px solid #2d4fa1;}
+.act a { color:#2d4fa1!important;}
+.a_new {
+    margin:10px auto;
+    padding:10px;
+    background:#Fff;
+    overflow: hidden;
+    }
+.a_new > img { float:left; width:40%; height:90px; border-radius:3px;}
+.a_new > div { float:left; width:60%; padding-left:10px;}
+/* 新闻标题 */
+.a_new > div > div:nth-child(1) {
+    width:95%;
+    -webkit-line-clamp: 2;
+    margin-bottom:15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    color:#666; font-size:14px;
+    }
+.a_new > div > div:nth-child(1) a { color:#333; font-size:16px; line-height:30px;}
+.a_new > div > div:nth-child(2) { height:20px; color:#999;}
+.a_new > div > div:nth-child(2) span { color:#999;}
+.a_new > div > div:nth-child(2) span:nth-child(1) { float:left; padding-right:8px;}
+.a_new > div > div:nth-child(2) span:nth-child(2) { float:left;
+    padding-left:8px;
+
+    }
+.a_new > div > div:nth-child(2) span input { padding-left:6px; color:#999; font-size:14px;}
+/*--------------------- 四海之家 -------------------*/
+.a_about { margin:15px auto 0; width:95%;}
+.a_about > div { font-size:16px; text-align:center; line-height:40px; }
+.a_about > p { padding:10px;
+    text-indent: 25px;
+    background:#fff;
+    margin-top:10px;
+    overflow:hidden;
+	line-height:35px;
+    }
+.a_about > p > div { clear:both; font-size:14px; font-weight:normal;}
+/*------------------- 新闻详情页 ------------------ */
+.new_detail { padding:55px 15px 15px; text-align:center;}
+.new_detail > div { margin-bottom:5px;}
+.new_detail > div:nth-child(1) { color:#333;}
+.new_detail > div:nth-child(2) span { color:#999; font-size:12px;}
+.new_detail > div:nth-child(2) span:nth-child(2) { margin-left:10px;}
+.new_detail > p { text-align:left; color:#666; font-size:14px; line-height:30px; }
+.new_detail > p:nth-last-child(3) { padding-bottom:20px;}
+.new_detail .bottom { color: #377bb5; font-size: 14px;}
+.new_detail .bottom span { padding:0 0.3%;}
+.new_detail .bottom span a { text-decoration: none;}
+.new_detail .bottom span a img { padding-right: 5px; height: 25px; width:30px;}
+.enjoy { position:relative; width:100%; padding-bottom:20px; border-top:1px solid #ddd;}
+.enjoy > div { position:absolute; width:30%; background:#fff; left:35%;top:-10px; color:#ddd;}
+
+    /*------------------------- 学员之声----------------------------------- */
+.point { width:90%; margin:0 auto; padding:10px 0 15px; border-bottom:1px solid #ddd;}
+.point > div { height:30px;}
+.point > div > img { float:left; width:30px; padding-top:2px; height:30px; border-radius:15px;}
+.point > div > div:nth-child(2) { margin-left:15px; float:left; width:30%;}
+.point > div > div:nth-child(3) { margin-left:5px; float:right; width:50%;}
+.point p { width:95%; margin-left:5%; background:#f8f8f8; padding:6px; clear:both;}
+
+/* ----------------------------- 公司荣誉 ----------------------------- */
+.a_about .a_honer { clear: both; margin:1% 0; text-align:center; background:#fff; padding:5% 0 3%;}
+.a_about .a_honer li { padding-bottom:4%;}
+.a_about .a_honer img { width:100%;}
+#a_honer { display:none; background: rgba(0, 0, 0, 0.82); width:100%; position:fixed; top:0; left:0; height:100%;}
+#a_honer .a_hBig { width:90%; margin: 35% auto 0;}
+#a_honer .a_hBig img { width:100%;}
+
+/* ----------------------------- 公司荣誉  结束 ----------------------------- */
+
+/* ----------------- 招贤纳士 ------------------ */
+.a_work { margin:1% 0; background: #fff; padding:0.5% 2%;}
+.a_work .a_wone { position: relative; padding:0 2%; margin:40px 0; border: rgba(2, 114, 198, 0.57) solid 1px;}
+.a_work .a_wone h4 { background: #fff; font-size:18px; position: absolute; top:-20px; right:7%; padding:0 4%;}
+.a_work .a_wone dl { font-size: 14px; font-weight: normal;}
+.a_work .a_wone dl dt { width:100%; padding:10% 56% 4% 10%;}
+.a_work .a_wone dl dt img { width:100%;}
+.a_work .a_wone dl dd { padding:0 3%; text-align:justify; line-height:24px;}
+.a_work .a_wone dl dd:nth-of-type(1) { font-size: 18px; line-height: 38px;}
+.a_work .a_wone dl .ddTit { font-weight: bold; line-height:32px;}
+.mt30 { margin-top:30px!important;}
+
+/* ----------------- 招贤纳士 结束 ------------------ */
+
+/* 学员之声 */
+.point { width:100%; padding:10px 5% 15px; border-bottom:1px solid #ddd;}
+
+/*------------ open_course ---------------*/
+.fr { float:right;}
+.fl { float:left;}
+.o_Banner { margin-top:40px;}
+.o_Banner img { width:100%;}
+.o_content { width:100%;}
+.o_tit { position: relative; width:100%;  background: #fff; border-bottom:1px solid #eee;}
+.o_tit p { margin:0; line-height:40px; font-size:16px; padding:0.5% 4%;}
+
+.o_tit p span { float:right;}
+.o_menu { display:none;
+    width:100%;
+    overflow: hidden;
+    position: absolute;
+    padding:2% 4%;
+    background: #fff;
+    border-bottom:1px solid #eee;
+	z-index:10000;
+}
+.o_menu li { width:100%; line-height:40px; border-bottom:1px dashed #eee;}
+.o_menu li:nth-last-child(1) { border-bottom:none;}
+.o_menu li a { color:#666;}
+
+.o_list { margin:4% 1.5% 10%; width:96%;
+    background: #fff;
+    padding-bottom:0;
+    margin:8px 2% 0;
+    border:1px solid rgba(6, 145, 255, 0.07);
+    border-bottom:none;
+    border-radius:8px;
+    box-shadow: rgba(2, 161, 255, 0.18) 0 0 2px;}
+.o_list img{ width:40%;}
+.o_list li { width:100%; margin-top:6%;}
+.o_list li > p { font-size:12px; color:#666; margin:2%;}
+.o_list li > div { width:40%;
+}
+.o_list li > div h5 { display:block;
+    padding:0.5% 0 2.5%;
+    border-bottom:1px rgba(35, 82, 224, 0.31) dashed;
+}
+.o_list li > div p { color:#666; padding:0.5% 2%;}
+.o_list li > div .o_btn { width:100%;
+    margin:0 auto;
+    color:#fff;
+    font-size: 16px;
+    border-radius:0 0 8px 8px;
+    background: rgba(1, 113, 255, 0.58);
+    padding:1% 0;
+}
+
+
+/* ------------------- 学员之声 ------------------- */
+.s_heart { width:96%;   padding:60px 0 3%; margin:0 3%; border-bottom:1px dashed #ccc;}
+.s_heart .s_hpic { float:left; width:20%;}
+.s_heart .s_hpic img { width:100%;}
+.s_heart .s_hInfo { float:left; width:80%; padding-left:8%;}
+.s_heart .s_hInfo h4 { padding-top:0;}
+.s_heart .s_hInfo h4 span { font-size: 14px; padding-left:9%; color:#666;}
+.s_heart .s_hInfo p { color:#666; margin:0; font-size:14px;}
+.s_heart .s_hInfo p span { padding-left:9%;}
+.s_heart .s_hText { clear:both; padding:1.5% 1%;}
+.s_heart .s_hText p { margin:0; color:#444; text-align: justify; line-height:24px;}
+
+/* 学员之声 22222222222*/
+.a_hContent {}
+.a_heart1 { position: relative; border:1px solid #9acfea; margin:16% 4%; padding-top:35px;}
+.s_hpic1 { position: absolute; background:#fff; border-radius: 50%; width:25%;  padding:0 1%; top:-20%; right:9%; }
+.s_hpic1 img { width:100%;}
+.s_hInfo1 h4 { line-height:24px; padding:1% 2% 0;}
+.s_hInfo1 h4 span { padding-left:5%; font-size: 14px; color:#666;}
+.s_hInfo1 p { color:#666; padding:0 2%;}
+.s_hInfo1 p span { padding-left:5%;}
+.s_hText1 p { padding:0 2%; text-align: justify; color:#666; font-size:14px; line-height:35px;}
+
+
+/* Ipad 横屏 */
+@media screen and (min-width:1024px){
+    /* 公司荣誉 */
+    #a_honer .a_hBig { width:48%!important;  margin:7.5% auto 0!important;}
+    /* 招贤纳士 */
+    .a_work .a_wone dl dt { padding:10% 70% 4% 10%!important;}
+
+    /* 学员之声 11111111111111*/
+    .s_heart { padding:60px 0 1%; margin:0 2%;}
+    .s_heart .s_hpic { width:10%;}
+    .s_heart .s_hInfo { width:90%; padding-left:6%;}
+    .s_heart .s_hInfo h4 { padding-top:1.5%; font-size:24px;}
+    .s_heart .s_hInfo h4 span { padding-left:5%; font-size: 18px;}
+    .s_heart .s_hInfo p { font-size:18px;}
+    .s_heart .s_hInfo p span { padding-left:5%;}
+    .s_heart .s_hText p {font-size:18px; line-height:28px;}
+
+
+    /* 学员之声 222222222222*/
+    .a_heart1 {}
+    .s_hpic1 { width:15%!important; top:-38%!important; right:6%;  }
+}
+/* Ipad 竖屏 */
+@media screen and (min-width:768px){
+    /* 公司荣誉 */
+    #a_honer .a_hBig { width:80%; margin: 15% auto 0;}
+    /* 招贤纳士 */
+    .a_work .a_wone dl dt { width:100%; padding:10% 70% 4% 10%!important;}
+
+    /* 学员之声 222222222222*/
+    .a_heart1 { margin:12% 2%;}
+    .s_hpic1 { width:20%;  top:-45%; }
+    .s_hInfo1 h4 { font-size:22px;}
+    .s_hInfo1 h4 span { font-size: 18px;}
+    .s_hInfo1 p { font-size: 18px;}
+    .s_hText1 p { font-size:18px; line-height:35px;}
+
+
+}
+/* IPhone 6plus 和 IPhone6 横屏 */
+@media (min-width:667px) and (max-width:736px){
+    /* 公司荣誉 */
+    #a_honer .a_hBig { width:35%; margin: 7.5% auto 0;}
+    /* 招贤纳士 */
+    .a_work .a_wone dl dt { padding:10% 70% 4% 10%!important;}
+
+    /* 学员之声 222222222222*/
+    .a_heart1 { margin:8% 2%;}
+    .s_hpic1 { width:16%!important; top:-28%; right:6%;}
+    .s_hInfo1 h4 { font-size:22px;}
+    .s_hInfo1 h4 span { font-size: 18px;}
+    .s_hInfo1 p { font-size: 18px;}
+    .s_hText1 p { font-size:18px; line-height:35px;}
+
+
+}
+/* IPhone 5 和 别的 横屏 */
+@media (min-width:568px) and (max-width:640px){
+    /* 公司荣誉 */
+    #a_honer .a_hBig { width:33%; margin: 9.5% auto 0;}
+    /* 招贤纳士 */
+    .a_work .a_wone dl dt { padding:10% 70% 4% 10%!important;}
+
+    /* 学员之声 222222222222*/
+    .a_heart1 { margin:8% 2%;}
+    .s_hpic1 { width:16%!important; top:-22%; right:6%;}
+    .s_hInfo1 h4 { font-size:20px;}
+    .s_hInfo1 h4 span { font-size: 16px;}
+    .s_hInfo1 p { font-size: 16px;}
+    .s_hText1 p { font-size:16px; line-height:35px;}
+}
+
+@media screen and  (max-width: 767px) {
+    /* 内容结束 */
+    .end { margin-top:10px;}
+
+}
+@media screen and  (max-width: 320px) {
+    .c_list span {  line-height: 22px; padding: 6px 7%; margin:0; background: #ddd;}
+}
+
+
+
+
+
+
+

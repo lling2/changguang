@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<#include "common.html" />
+<head lang="en">
+    <base id="basePath" href="${basePath}"/>
+    <meta charset="UTF-8">
+    <title>四海兴唐</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <link href="${basePath}/resources/assets/mobile/common/css/app.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="${basePath}/resources/assets/mobile/common/js/appConfig.js"></script>
+    <link href="${basePath}/resources/assets/plugins/swiper/swiper-3.3.1.min.css" rel="stylesheet"/>
+    <script src="${basePath}/resources/assets/plugins/swiper/swiper-3.3.1.min.js" type="text/javascript"></script>
+</head>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+
+<body>
+	<div class="header" >
+	   <span style="font-size:24px; font-weight:blod;">四海兴唐</span>
+	</div>
+    <!-- 图片轮播 -->
+    <div class="swiper-container banner">
+        <div class="swiper-wrapper">
+            <script type="text/html" id="bannerTemp">
+            {{#banners}}
+		    <div class="swiper-slide">
+                <a href="{{bannerUrl}}">
+		           <img height="170" src="{{bannerImgPath}}" alt="{{bannerTitle}}" />
+                </a>
+		     </div>
+		    {{/banners}}
+            </script>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- 分类4格 -->
+    <div class="fenlei">
+        <div>
+            <a href="${basePath}/course">
+                <img src="${basePath}/resources/imgs/icons/flbg1.jpg" />
+                <div style="top:30%; left:30%; position:absolute;">全部课程</div>
+            </a>
+        </div>
+        <div>
+            <a href="${basePath}/teacher">
+                <img src="${basePath}/resources/imgs/icons/flbg2.jpg"  />
+                <div>专家师资</div>
+            </a>
+        </div>
+        <div>
+            <a href="${basePath}/startSchool">
+                <img src="${basePath}/resources/imgs/icons/flbg3.jpg" />
+                <div style="top:32%; left:32%; position:absolute;">开课信息</div>
+            </a>
+        </div>
+        <div>
+            <a  href="${basePath}/student">
+                <img src="${basePath}/resources/imgs/icons/flbg4.jpg" />
+                <div>学员就业</div>
+            </a>
+        </div>
+        <!-- 广告 -->
+        <a href="#"><img src="${basePath}/disk/imgs/temp/ad.jpg" class="ad" /></a>
+    </div>
+    <!-- 精品课程 -->
+    <div class="con1" style=" background:#fff; overflow: hidden;">
+        <div class="tit_2 margin5" style="border-left:3px solid #03E8E1;">
+            <div class="jpkc">
+            	<span>精品课程</span>
+                <a class="more fr" href="${basePath}/course">
+                    更多  > 
+                </a>
+            </div>    
+        </div>
+        <div class="row" id="classList">
+            <script type="text/html" id="classTemplate">
+        	{{#aaData}}
+            <div class="col-xs-6 col-lg-4 pad10">
+                	<div><img src="{{classImg}}" alt="" style="height: 110px; width: 100%; display: block;" class="img-rounded"/></div>
+					<div class="color0 textl line-height55 text-aline text_width"><a href="${basePath}/course/{{classId}}">{{className}}</a></div>
+            </div>
+            {{/aaData}}
+            </script>
+        </div>    
+        <ul style=" margin-bottom:0; border-top:none;" id="courseDicts">
+            <script type="text/html" id="courseDictTep">
+                {{#aaData}}
+                <li><a href="${basePath}/course?clsDictId={{classDictId}}">{{classDictName}}</a></li>
+                {{/aaData}}
+		    </script>
+        </ul>
+    </div>
+    <!-- 金牌讲师 -->
+    <div class="con1">
+        <div  class="tit_2 margin5" style="border-left:3px solid #a657fe;">
+            <div class="jpkc">
+                <span>金牌讲师</span>
+                <a class="more fr" href="${basePath}/teacher">
+                   更多  > <!--<img src="${basePath}/resources/imgs/icons/more.png" class="gd" />-->
+                </a>
+            </div>
+        </div>
+         <div class="row" id="tcList">
+             <script type="text/html" id="tcTemplate">
+             {{#aaData}}
+             <div class="col-xs-6 col-lg-4 pad10">
+                 <div>
+                     <img class="img-rounded" alt="" src="${basePath}/{{tcImg}}" style="height: 240px; width: 100%; display: block;">
+                     <div class="caption" style="text-align:center;">
+                         <h5 class="color0" style="margin-bottom:0;"><a href="${basePath}/teacher/detail/{{tcId}}">{{tcName}}</a></h5>
+                         <span class="gray_color font14 pr15 line-height55">{{ext1}}</span>
+                     </div>
+                 </div>
+             </div>
+	        {{/aaData}}
+            </script>
+         </div>    
+    </div>
+    <!-- 公司资讯 -->
+    <div class="con1">
+        <div class="tit_2 margin5" style="border-left:3px solid #FFC300;">
+            <div class="jpkc"><span>公司资讯</span><a class="more fr" href="${basePath}/newsMobile"> 更多  ></a></div>
+        </div>    
+        <div class="row" id="newsList">
+             <div class="col-xs-6 col-lg-4">
+                <div>
+                      <div><img class="img-rounded" src="img/banner3.jpg" alt="" style="height: 200px; width: 100%; display: block;"></div>
+                      <div class="line-height55 color0 text-aline text_width">大世界网咖朝阳区分部投建</div>
+                </div>
+             </div>
+             <script type="text/html" id="newsTemplate">
+            {{#aaData}}
+               <div class="col-xs-6 col-lg-4 pad10">
+                      <div>
+                      <div><img class="img-rounded" src="${basePath}/{{newsFile}}" alt="" style="height: 120px; width: 100%; display: block;"></div>
+                      <div class="line-height55 color0 text-aline text_width"><a href="${basePath}/news/detail/{{newsId}}">{{newsTitle}}</a></div>
+                </div>
+             </div>
+            {{/aaData}}
+            </script>  
+        </div>
+    </div>
+    <!-- 学员就业 -->
+    <div class="con1">
+        <div class="tit_2">
+            <div class="jpkc"><span>学员就业</span><a class="more fr" href="${basePath}/student"> 更多  ></a></div>
+        </div>
+        <div class="row" id="studentStarList">
+            <script type="text/html" id="studentStarTemplate">
+            {{#aaData}}
+            <div class="col-sm-6 col-xs-12">
+                <a href="javascript:void(0)">
+				<div class="stu2">
+                    <div>
+                        <div>
+                            <div>{{stuPost}}</div>
+                            <div>{{stuCompany}}</div>
+                        </div>
+                        <img src="{{stuPhoto}}" />
+                    </div>
+                    <div>
+                        <div><img src="{{stuPostPic}}" /></div>
+                        <div>
+                            <div>月薪{{stuSalary}}</div>
+                            <div>{{stuName}}</div>
+                        </div>
+                    </div>
+                </div>
+				</a>
+            </div>
+            {{/aaData}}
+            </script>        
+        </div>
+    </div>
+    <script src="${basePath}/resources/assets/mobile/index.js" type="text/javascript"></script>
+</body>
+</html>

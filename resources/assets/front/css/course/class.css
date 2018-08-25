@@ -1,0 +1,52 @@
+/*开班课程的css*/
+.startCourse_contents{width:100%; height: auto;}
+.startCourse_toggle{background: url(../../../../imgs/startCourse/bg2.jpg) no-repeat; width:100%; height:300px; position:relative;}
+.startCourse_title{margin-top: 72px; font-size: 36px;  color: #fff;  line-height: 36px;  text-align: center;  text-shadow: 0px 4px 8px rgba(7, 17, 27, 0.4);  letter-spacing: 10px;  margin-bottom: 16px;}
+.startCourse_infor{margin-left: auto;  margin-right: auto;  font-size: 18px;  font-weight: 200;  color: #fff;  width: 880px;  line-height: 28px;  height: 56px;  overflow: hidden;  text-align: center;  text-shadow: 0px 4px 8px rgba(7, 17, 27, 0.4);}
+.startCourse_tabNav{position: absolute;cursor: pointer;  width: 1104px;  height: 120px;  box-sizing: border-box;  background-color: #fff;  border-radius: 12px;  box-shadow: 0px 8px 16px rgba(7, 17, 27, 0.1);  left: 50%;  bottom: -60px;  margin-left: -552px;  padding: 28px 24px 0; z-index: 10;}
+.startCourse_tabNav li{ position: relative; float: left; width: 25%; }
+.startCourse_tabNav li h3{font-size: 16px; text-align: center;}
+.startCourse_tabNav ul li div.starCourse_div{ position: relative;left: 0; top: 0; transition: all 0.6s;}
+.startCourse_tabNav ul li:hover div.starCourse_div{top: -10px;}
+.startCourse_tabNav ul li .starCourse_line{ position: absolute;  left: 80px; bottom: -10px; width:100px; height: 2px;  background: #D12610; }
+.startCourse_navicon{width: 36px;  height: 36px;  margin-left: auto;  margin-right: auto;  margin-bottom: 8px;  transition: .1s all linear;  margin-top: 0;  background:url(../../../../imgs/startCourse/nav.png);  background-size: cover;}
+.all{  background-position: 0 0;}
+.jx{  background-position: -35px 0;}
+.gx{  background-position: -72px 0;}
+.cjj {  background-position: -106px 0;}
+.qrs{  background-position: -143px 0;}
+.bc {  background-position: -180px 0;}
+.startCourse_limit{width:1200px; margin: 85px auto 0;}
+.startCourse_summary{padding-left: 20px; display: none;}
+.startCourse_summary:first-child{display: block;}
+.startCourse_left,.startCourse_right{float: left;}
+.startCourse_left{width:60%;}
+.startCourse_leftSummary li,.startCourse_rightSummary li{float: left; width: 50%; font-size: 20px; line-height:70px; padding:0 15px; background: url(../../../../imgs/startCourse/list-line.png) no-repeat left; overflow: hidden;}
+.startCourse_bigTitle{font-size:36px;  text-align: center; margin-bottom: 50px;}
+.startCourse_sign a{color: #6c6c6c;    font-size: 24px;    display: block;    border: 1px solid #797979;    border-radius: 3px;    height: 60px;    text-align: center;    line-height: 60px;    margin-top: 45px;    margin-bottom: 100px; width:25%;}
+.startCourse_sign a:hover{background: #F04646; color: #fff; border: #fff;}
+.startCourse_right{width:40%;}
+.startCourse_right img{width:100%;}
+
+.course_regsiter{width:100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000000; display: block; position: fixed; left: 0; top: 0;}
+.sign_content{width:360px;  background: #fff; position: absolute; top: 50%; left: 50%; margin: -182.5px 0 0 -180px; padding: 15px 20px 20px;}
+.sign_content ul{border-bottom: 1px solid #d0d6d9; line-height: 49px; height: 49px; width: 100%;}
+.sign_content ul li{float: left;    width: 80px;    text-align: center;    height: 49px;    line-height: 49px;    cursor: pointer; font-size:18px;}
+.sign_content ul .active{color: #f01400; border-bottom: 1px #f01400 solid;}
+.user_name,.user_password{width: 279px; margin: 0 auto; margin-top: 25px;   padding: 9px 9px 9px 10px;    background-color: #fff;    border-color: #d0d6d9;    box-shadow: 2px 0 5px 0 #fff;}
+.user_name  input,.user_password input{color: #98a1a6; width: 100%;    background-color: #fff;    border: 1px solid #98a1a6;    padding: 9px;    font-size: 14px;    border-radius: 0;}
+.user_password{margin-top: 10px;}
+.auto_sign{width:100%; line-height: 40px;}
+.right_float{float: right; padding-right: 30px;}
+.left_float{float: left; padding-left: 30px;}
+.left_padding{padding-left: 10px;}
+.left_float input{margin-top: 13px;}
+.sign_button input{color: #fff; width:300px; margin: 0 auto; display: block; line-height: 45px; font-size: 18px; background: #F01400; margin-top: 15px; }
+.other_sign{line-height: 65px; padding-left: 15px; background: #fff; padding-top: 0px; border: none;}
+.other_sign a{float: left; width: 32px; height: 32px; display: block;} 
+.footer .footer-icons-wrap .text_other{line-height:32px; float: left; width: 100px; background: none; color: #000000;}
+.other_sign .padding_top{padding-top: 10px;}
+.hide{display: none;}
+.show{display: block;}
+.course_infor .test_width{width:50%; float: left; margin-left: 20px;}
+.course_infor .test_width input{width:100%;}

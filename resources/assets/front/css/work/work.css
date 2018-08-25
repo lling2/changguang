@@ -1,0 +1,308 @@
+﻿a{text-decoration: none!important;}
+
+/*就业之星*/
+::-webkit-scrollbar-thumb:window-inactive {background: rgba(255,0,0,0.4);}
+.star_wrap .star_rightFix{ z-index:10000; position: fixed; right: 0px; bottom: 89px;}
+.star_wrap .star_rightFix li{ text-align: center; width: 40px; line-height:40px;}
+.star_wrap .star_rightFix li:hover{ cursor: pointer;}
+.star_wrap .star_rightFix li img{ width:30px;}
+.star_wrap .star_cont{color:black; text-align: center; width:1200px; margin:0 auto; }
+.star_ban{ margin:0 auto;}
+.star_ban img{ width:1349px;}
+.star_cont_H4tit{height:65px;text-align: center; border-bottom: 1px solid #eee; margin-bottom: 75px;}
+.star_cont_H4tit li{display:inline-block;margin-right: 50px; }
+.star_cont_H4tit li a{ color:black;line-height: 62px; padding: 0 10px;}
+.star_cont_H4tit li a:hover{color:#ee4747;}
+.star_cont_H4tit li a:visited{color:#ee4747; border-bottom:2px solid #ee4747;}
+.star_cont_H4tit li h4{font-size: 16px;display: inline;}
+.star_wrap .star_cont .star_cont_tit{  margin-top:1%;}
+.star_wrap .star_cont .star_cont_dls{ margin:20px auto; width:1200px; text-align:center;}
+.star_wrap .star_cont .star_cont_dls dl{ width:340px; float: left; text-align:center; margin-right:90px; margin-bottom:20px;}
+.star_wrap .star_cont .star_cont_dls dl dd img{ width:340px;}
+.star_wrap .star_cont .star_cont_dls dl dd{ position:relative; overflow:hidden;}
+.star_wrap .star_cont .star_cont_dls dl dd p{ transition: height 0.5s; position: absolute; color: white; font-size:30px; width:100%; bottom: -10px; line-height:40px; height: 0px; background: #ee4747;}
+.star_wrap .star_cont .star_cont_dls dl dt{ margin-top:20px; height:160px;}
+.star_wrap .star_cont .star_cont_dls dl dt h5{ font-size: 18px;color:black;}
+.star_wrap .star_cont .star_cont_dls dl dt .star_cont_dls_work{ color: #acacac; font-size:14px; font-weight:normal;}
+.star_wrap .star_cont .star_cont_dls dl dt .star_cont_dls_experience{font-weight:normal; color: #acacac; font-size:12px;}
+.star_cont_Page{ width:241px; margin:0 auto; height:36px; text-align:center; color:#acacac; margin-top:100px;}
+.star_cont_Page li{ width:36px; line-height:36px; background:#eeeeee; float:left; text-align:center;margin-right:5px;}
+.defaultFoot{ position:absolute;  margin-top:1200px;  z-index:-1; width:100%;}
+/*就业指导 */
+.gratitude_banner{
+	margin-top:50px;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom:20px;
+}
+.gratitude_banner .banner{
+	height: 100%;
+	position: inherit;
+	width: 100%;
+	background: url(../../../imgs/gratitude/banner.jpg) no-repeat center bottom;
+	background-size: cover;
+}
+.gratitude_contents{
+	background-color: #fff;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.gratitude_contents .wrap{
+	width: 1200px;
+	padding-top:0px;
+	margin: 0 auto;
+}
+.gratitude_contents .wrap .gratitude_contents_item{
+	width: 560px;
+	height: 250px;
+	/*border-top: 1px solid rgba(0, 0, 0, .06);*/
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+	margin: 0 40px 15px 0;
+	transition: all 0.3s ease-out 0s;
+}
+.gratitude_contents .gratitude_contents_item:hover{
+	border-color: #A1A1A1;
+}
+.gratitude_contents .gratitude_contents_item{
+	float: left;
+}
+.gratitude_contents .gratitude_contents_item a{
+	overflow: hidden;
+	z-index: 1;
+	transition: all 0.3s ease-out 0s;
+	float: right;
+}
+.gratitude_contents .gratitude_contents_item a .pic{
+	margin-right: 50px;
+	margin-top: 30px;
+}
+.gratitude_contents .gratitude_contents_item a .pic img{
+	transition: all 0.3s ease-out 0s;
+	width: 130px; height: 130px;
+}
+.gratitude_contents .gratitude_contents_item:hover a .pic img{
+	margin-top: 20px;
+}
+.gratitude_contents_item a{
+	display: block;
+	position: relative;
+}
+.gratitude_contents .gratitude_contents_item .info{
+	cursor: pointer;
+}
+.gratitude_contents .gratitude_contents_item .info .title{
+	display: inline-block;
+	font-size: 18px;
+    color: #484848;
+    margin-right: 20px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.gratitude_contents .gratitude_contents_item .info{
+	float: left;
+    width: 308px;
+    height: 140px;
+    transition: all .6s cubic-bezier(.215, .61, .355, 1);
+    text-align: left;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+.gratitude_contents .gratitude_contents_item:hover .title{
+	margin-top: 20px;
+}
+.gratitude_contents_item .info{
+	margin-top: 33px;
+    text-align: center;
+}
+.gratitude_contents .gratitude_contents_item:hover .info{
+    margin-top: 30px;
+}
+
+.gratitude_contents .gratitude_contents_item .info .subtitle{
+	font-size: 12px;
+	color: #999;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-style: normal;
+	position: relative;
+	top: 2px;
+}
+
+.gratitude_contents .gratitude_contents_item .info .discription{
+	font-size: 12px;
+    color: #757575;
+    line-height: 24px;
+    height: 72px;
+    margin-top: 0px;;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 3;
+  	-webkit-box-orient: vertical;
+}
+
+/*就业感言详情*/
+.gratitude_modal-mask{
+	position: fixed;
+	z-index: 7000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	background: rgba(0, 0, 0, 0.8);
+	filter: alpha(opacity=80);
+	opacity: 0.80;
+	display: none;
+}
+.gratitude_details{
+	width: 624px;
+    height: 307px;
+    background: #fff;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    border-radius: 5px;
+}
+.gratitude_details .gratitude_contents_item a{
+	margin-right: 50px;
+	margin-top: 30px;
+	float: right;
+}
+.gratitude_details .gratitude_contents_item a .pic img{
+	width: 180px;
+	height: 180px;
+	margin-top: 30px;
+}
+.gratitude_details .gratitude_contents_item a{
+	display: block;
+	position: relative;
+}
+.gratitude_details .gratitude_contents_item .info .title{
+	display: inline-block;
+	font-size: 18px;
+    color: #484848;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px!important;
+}
+.gratitude_details .gratitude_contents_item .info .subtitle{
+	margin: 0px!important;
+	font-size: 14px;
+	margin: 5px 0px;
+}
+.gratitude_details .gratitude_contents_item .info{
+	float: left;
+    width: 394px;
+    text-align: left;
+    margin-top: 30px;
+    padding: 0 45px;
+}
+.gratitude_details .gratitude_contents_item .info .discription{
+	font-size: 12px;
+	color: #949494;
+	margin-top: 5px;
+	line-height: 18px;
+	overflow: hidden;
+	height: 108px;
+	overflow: hidden;
+}
+.gratitude_details .off{
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	background: #f0f0f0;
+	font-size: 16px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;    
+}
+.gratitude_paging{
+	width:100%;
+	height:45px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.gratitude_paging .active{
+	background: #F0F0F0;
+}
+.gratitude_paging a{
+	font-size: 16px;
+	padding:10px 13px;
+	line-height: 30px;
+	margin:0px 15px 0px 0px;
+	color:#000;
+	cursor:pointer;
+	list-style: none;
+	background-color: #ffffff;
+	border: solid 1px #F0F0F0;
+	color: #004B54;
+}
+.gratitude_paging .prev{
+	background: green!important;
+	color: #ffffff!important;
+}
+.gratitude_paging a:hover{
+	background-color: #f0f0f0;
+}
+.gratitude_contents_footer{
+	width: 100%;
+	height: 260px; 
+	background: #f0f0f0; 
+	margin-top: 40px;
+	padding: 30px 0px;
+}
+.gratitude_contents_footer h2{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 32px 0 0 0;
+	color: #242629;
+	font-size: 35px;
+	line-height: 90px;
+	text-align: center;
+}
+.gratitude_contents_footer p{
+	line-height: 20px;
+	color: #a1a3a7;
+	font-size: 15px;
+	text-align: center;
+	padding: 0;
+	margin-top: 5px;
+}
+
+
+
+/*就业之星三级页*/
+.Intro_cont{ width:1200px; margin:100px auto;}
+.Intro_cont .Intro_cont_left{ float:left; width:400px; text-align:center;}
+.Intro_cont .Intro_cont_left img{ width:400px;}
+.Intro_cont .Intro_cont_Right{ float:left; width:740px; padding-left:60px;}
+.Intro_cont .Intro_cont_Right h3{ color:#343434; font-weight:normal;}
+.Intro_cont .Intro_cont_Right .Intro_cont_Right_p1{color:#8d8e90;}
+.Intro_cont .Intro_cont_Right .Intro_cont_Right_pic{ width:740px; height:30px; margin-top:30px; border-bottom:1px dotted #dedede; padding-bottom:70px;}
+.Intro_cont .Intro_cont_Right .Intro_cont_Right_pic li{width:30px; line-height:30px; text-align:center; border-radius:15px; margin-right:20px;float:left; background:#ee4747;}
+.Intro_cont .Intro_cont_Right .Intro_cont_Right_pic li img{width:20px; height:20px;}
+.Intro_cont .Intro_cont_Right .Intro_cont_Right_p2{color:#68727c; margin-top:50px; padding-bottom:30px;width:740px;border-bottom:1px dotted #dedede;}
+.Intro_cont .Intro_cont_Right .Intro_cont_Right_p2 h4{ font-weight:normal;}
+.Intro_cont .Intro_cont_Right .Intro_cont_Right_p2 li{line-height:30px;}
+.defaultFoot1{ position:absolute;  margin-top:800px;  z-index:-1; width:100%;}
+/*学员风采*/
+.student_like{width: 1200px; margin:-40px auto 0;}
+.student_like>ul{width:100%;}
+.student_like>ul>li{width: 100%; background: #f7f7f7;border: 1px solid #e5e5e5; overflow: hidden; margin-bottom: 20px;padding: 20px;}
+.student_like>ul>li>dl{width: 100%;}
+.student_like>ul>li>dl>dt{width: 100px; height: 100px; float: left;  border-radius: 100px; border:4px solid #f5f5f5; overflow: hidden;}
+.student_like>ul>li>dl>dd{width: 100%; margin-left: 120px;}
+.student_like>ul>li>dl>dd>p{width:90%;}
+.student_like>ul>li>dl>dd .name{font-size: 20px;font-weight: 700;}
+.student_like>ul>li>dl>dd .name>span{font-size: 14px;font-weight: 600; color: #999; margin-left: 20px;}
+.student_like>ul>li>dl>dd .description{font-size: 12px; color: #999; height: 34px;overflow: hidden;}
+.student_like>ul>li>dl>dd>a{color:#333; font-size: 12px;}
+.student_like>ul>li>dl>dd>a:hover{color:#ee4747;}
+.student_page{ margin: 50px auto;}

@@ -1,0 +1,36 @@
+.teacher_more {background: #f5f5f5; padding-bottom: 100px;}
+.teacher_more h3{color: #333; text-align: center;font-size: 24px;font-weight: normal;}
+.teacher_more .teacher_more_banner{width: 100%; height: 470px;background: url(../../../../imgs/teacher/addTeacher_banner.jpg) no-repeat;background-position: center top;}
+.teacher_more .teacher_more_banner .introduce{width: 800px; padding-top:60px;margin:0 auto;font-size: 16px;color: #fff;text-align: center;vertical-align: middle;}
+.teacher_more .teacher_more_banner .introduce .image{width: 98px; height: 98px; margin: 0 auto;display: block;}
+.teacher_more .teacher_more_banner .introduce .image img{max-width: 90px; height: auto;}
+.teacher_more .teacher_more_banner .introduce .tit{ margin: 0; font-size: 30px;font-weight: bold; line-height: normal;}
+.teacher_more .teacher_more_banner .introduce .subtit{font-size:18px;line-height: normal;}
+.teacher_more .teacher_more_banner .introduce .description{ margin: 0; font-size:16px;line-height: normal;}
+.teacher_more .teacher_more_banner .introduce >a{width: 180px; height: 52px; line-height: 52px; background: #5ecfba; display: block; margin: 30px auto;color: #fff; border-radius: 5px;}
+.teacher_more .teacher_more_banner .introduce >a:hover{ background: #2db8a6;}
+.teacher_more .teacher_more_info{width: 1160px; margin:-50px auto 0; padding: 0 100px; background: #fff;}
+.teacher_more .teacher_more_info ul{padding: 35px 108px;border-bottom: 1px solid #e8e8e8; margin: 0;}
+.teacher_more .teacher_more_info ul li{float:left;margin-left: 72px;font-size: 16px; line-height: normal;}
+.teacher_more .teacher_more_info ul li::before{width: 60px;height: 60px; display: block;content: ""; float: left;margin-right: 20px;background-position: -1px -62px; background-image: url(../../../../imgs/teacher/addTeacher_icon.png);}
+.teacher_more .teacher_more_info ul li:first-child::before{background-position: -1px -1px;}
+.teacher_more .teacher_more_info ul li:last-child::before{background-position: -1px -123px;}
+.teacher_more .teacher_more_info ul li strong{color:#666;display: block;font-size: 38px;font-weight: normal;margin-left: 80px;line-height: 1.1;}
+.teacher_more .teacher_more_works{width: 1160px; margin: 0 auto; background: #fff; overflow: hidden;padding: 40px 0 65px;}
+.teacher_more .teacher_more_works #carousel-example-generic{ margin-left: 120px;width: 940px; margin-top: 26px;}
+.teacher_more .teacher_more_works #carousel-example-generic img{ width: 100%;}
+.teacher_more .teacher_more_experience{width: 1160px; margin: 0 auto; padding-top: 50px;}
+.teacher_more .teacher_more_experience ul{padding: 0 180px; margin-top: 36px;}
+.teacher_more .teacher_more_experience ul li span{font-size: 20px; float: left;width: 85px;display: block;padding-bottom: 36px; line-height: normal;}
+.teacher_more .teacher_more_experience strong{font-size: 20px; margin-bottom: 12px; display: block;line-height: normal;}
+.teacher_more .teacher_more_experience p{ color: #666;}
+.teacher_more .teacher_more_experience .infos{border-left: 1px solid #d7d7d7; margin-left: 85px; padding: 0 0 36px 58px; position: relative;}
+.teacher_more .teacher_more_experience .infos::before{content: "";display: block;width: 22px; height: 22px; background-position: -78px 0; position: absolute;left: -11px;background-image: url(../../../../imgs/teacher/addTeacher_icon.png);}
+.teacher_more .teacher_more_sendwork{width: 1160px; margin: 0 auto; background:#fff; overflow: hidden;}
+.teacher_more .teacher_more_sendwork dt{width: 580px; height: 400px; overflow: hidden;float: left;}
+.teacher_more .teacher_more_sendwork dt img{ width: 100%;}
+.teacher_more .teacher_more_sendwork dd{padding-right: 65px; padding-top: 40px; width: 525px; margin-left: 635px;}
+.teacher_more .teacher_more_sendwork dd h3{ text-align: left;}
+.teacher_more .teacher_more_sendwork dd p{color:#666;font-size: 18px; line-height: 1.6; margin-top: 12px; max-height: 280px;overflow: hidden;}
+.teacher_more .teacher_more_sendwork dd a{width: 180px; height: 52px; line-height: 52px; background: #5ecfba; display: block; margin: 30px auto;color: #fff; border-radius: 5px; text-align: center;}
+.teacher_more .teacher_more_sendwork dd a:hover{background: #2db8a6;}

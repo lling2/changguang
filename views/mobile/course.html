@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<#include "common.html" />
+<head>
+    <base id="basePath" href="${basePath}"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <script type="text/javascript" src="${basePath}/resources/assets/mobile/common/js/appConfig.js"></script>
+    <script type="text/javascript" src="${basePath}/resources/assets/mobile/drop/dropload.min.js"></script>
+    <link href="${basePath}/resources/assets/mobile/drop/dropload.css" type="text/css" rel="stylesheet" />
+</head>
+<body style="background:#fff;">
+    <@header item="高端课程"/>
+    <div style="width: 95%; margin: 0 auto;">
+        <div class="con1" style=" margin-top:55px; overflow: hidden;">
+            <div style="margin-top:10px; margin-bottom:20px;">
+                <#list classDicts as dict>
+                     <a href="/course?clsDictId=${dict.classDictId}" class="btn" style="margin-bottom:10px;" data-id="${dict.classDictId}">${dict.classDictName}</a>
+                </#list>
+            </div>
+            <div class="row" id="testCoures">
+                 <script type="text/html" id="classAppend">
+                 {{#classes}}
+                 <div class="col-xs-6 col-lg-4">
+	                <div>
+                 		<div><img src="{{classImg}}" alt="" class="img-rounded"></div>
+	                	<div class="line-height55 text-aline textl text_width"><a class="color0" href="${basePath}/course/{{classId}}">{{className}}</a></div>
+	                </div>
+	             </div>
+	             {{/classes}}
+	             </script>
+           </div>
+        </div>
+    </div>
+    <script>
+	    var classAppendTemp = $("#classAppend").html().trim();
+	    Mustache.parse(classAppendTemp);
+		$(function(){
+			$(".btn").each(function(item) {
+				if ($(this).attr("data-id") == '${clsDictId}') {
+					$(this).addClass("btn-primary");
+				}else{
+					$(this).addClass("btn-default");
+				}
+			});
+			var offset = 0;
+		    var size = 8;
+		    $('#testCoures').dropload({
+		    	scrollArea : window,
+		        loadDownFn : function(me){
+		            $.ajax({
+		                type: 'GET',
+		                url: '/courseJson?offset='+offset+"&clsDictId="+$(".btn-primary").attr("data-id"),
+		                dataType: 'json',
+		                success: function(data){
+		                	if(data.classes.length>0){
+		                	var result = Mustache.render(classAppendTemp, data);
+		                    }else{
+		                        me.lock();
+		                        me.noData();
+		                        $('#testCoures').append('<div class="dropload-noData">暂无数据</div>')
+		                    }
+		                    $('#testCoures').append(result);
+	                        $(".dropload-down").hide();
+	                        me.resetload();
+		                },
+		                error: function(xhr, type){
+		                    alert('Ajax error!');
+		                    me.resetload();
+		                }
+		            });
+		            offset = offset + size;
+		        }
+		    });
+		});
+</script>
+</body>
+</html>

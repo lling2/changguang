@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<#include "common.html" />
+<head lang="en">
+    <base id="basePath" href="${basePath}"/>
+    <meta charset="UTF-8">
+    <title>四海兴唐</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <script type="text/javascript" src="${basePath}/resources/assets/mobile/common/js/appConfig.js"></script>
+</head>
+<style>
+    body { background:#fff;}
+</style>
+<body>
+    <!-- head -->
+    <@header/>
+    <!-- 内容 -->
+    <div class="new_detail"  style="margin-top: 8px;">
+        <div style="font-size:16px;">${news.newsTitle}</div>
+        <div style="line-height:30px;">
+            <span>来源：四海兴唐</span>
+            <span>${news.newsCrtdt}</span>
+        </div>
+        <p>
+           ${news.newsContent}
+        </p>
+        <!-- <div class="enjoy">
+            <div>分享到</div>
+        </div>
+        <div class="bottom">
+            <span><a href="#"><img src="img/icon2.gif"></a></span>
+            <span><a href="#"><img src="img/icon3.gif"></a></span>
+            <span><a href="#"><img src="img/icon4.gif"></a></span>
+            <span><a href="#"><img src="img/icon5.gif"></a></span>
+        </div> -->
+    </div>
+
+</body>
+</html>

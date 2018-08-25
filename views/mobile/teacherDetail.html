@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<#include "common.html" />
+<head lang="en">
+    <base id="basePath" href="${basePath}"/>
+    <meta charset="UTF-8">
+    <title>四海兴唐</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <link href="${basePath}/resources/assets/mobile/common/css/app.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="${basePath}/resources/assets/mobile/common/js/appConfig.js"></script>
+</head>
+<body>
+    <@header/>
+    <div class="tea_xq">
+        <img src="${tc.tcImg}" style="float:left;" class="img-thumbnail">
+        <div style="float:left; color:#333; line-height:24px; font-size:14px; font-weight:normal; margin-left:20px; margin-top:10px;">
+        <div class="font16">${tc.tcName}</div>
+        <div class="font14">${tc.ext1}</div>
+        </div>
+    </div>
+    <div class="tea_con">
+        <div class="font16">导师经历</div>
+        <p>${tc.tcDis}</p>
+    </div>
+    <div class="clearfix"></div>
+</body>
+</html>

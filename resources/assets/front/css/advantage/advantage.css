@@ -1,0 +1,299 @@
+.advantage .advantage_banner{
+	height: 420px;
+	width: 100%;
+	overflow: hidden;
+}
+.advantage .advantage_banner .banner{
+	height: 100%;
+	width: 100%;
+	background: url(../../../../imgs/advantage/advantage_banner.jpg) no-repeat left top;
+	background-size: cover;
+}
+.advantage .advantage_menu{
+	width: 100%;
+}
+.advantage .advantage_menu ul{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+	border-bottom: solid 1px #F0F0F0;
+}
+.advantage .advantage_menu ul li{
+	display: inline;
+    text-align: center;
+}
+.advantage .advantage_menu ul li a.current {
+    color:#ee4747; 
+    border-bottom: 3px solid #ee4747;
+}
+.add-class{
+	border-bottom: 3px solid #ee4747;
+	color:#ee4747; 
+}
+.advantage .advantage_menu ul li a{
+    font-size: 16px;
+    line-height: 56px;
+    color: #333;
+    display: inline-block;
+    margin: 0px 15px;
+    padding: 0px 5px;
+}
+.advantage .advantage_menu ul li a:hover{
+	color:#ee4747; 
+}
+.advantage .advantage_brand{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 42px;
+}
+.advantage .title h1{
+	font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+}
+.advantage .advantage_brand dl dd{
+    line-height: 24px;
+    color: #666;
+    font-size: 12px;
+}
+.advantage .advantage_brand .con{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 50px;
+	overflow: hidden;
+	border-bottom: 1px solid #e9e9e9;
+	padding-bottom: 50px;
+}
+.advantage .advantage_brand .con dl{
+	float: left;
+	width: 130px;
+	line-height: 26px;
+	color: #666;
+	margin: 0px 35px;
+}
+.advantage .advantage_brand .con dl h2{
+	font-size: 16px;
+	margin: 25px 0 5px 0;
+	color: #333;
+}
+.advantage .advantage_teacher{
+	width: 100%;
+	overflow: hidden;
+	padding: 42px 0px 20px;
+}
+.advantage .advantage_teacher h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+}
+.advantage .advantage_teacher .con {
+    width: 1228px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.advantage .advantage_teacher .con dl{
+	width: 279px;
+	margin: 30px 14px 0 14px;
+	float: left;
+	color: #666;
+	line-height: 22px;
+}
+.advantage .advantage_teacher .con .dt1{
+	background: url(../../../../imgs/advantage/fangan1.jpg) no-repeat left top;
+	background-size: cover;
+	height: 220px;
+	width: 100%;
+}
+.advantage .advantage_teacher .con dl .word{
+	font-size: 12px;
+	height: 50px;
+	overflow: hidden;
+}
+.advantage .advantage_teacher .con h3 {
+    margin: 15px 0 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+.advantage .advantage_teacher .con dd h3 a {
+    color: #333;
+}
+.advantage .advantage_device{
+	background: #f6f6f6;
+	overflow: hidden;
+}
+.advantage .wrap{
+	width: 1230px;
+	overflow: hidden;
+	margin: 40px auto 0px;
+}
+.advantage .title{
+	width: 100%;
+    text-align: center;
+}
+.advantage .title span{
+    font-size: 16px;
+    color: #666;
+}
+.advantage .advantage_device .wrap_con{
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    margin: 50px auto;
+}
+.advantage .advantage_device .wrap_con dl{
+	width: 380px;
+	float: left;
+	font-size: 14px;
+	margin: 15px;
+	overflow: hidden;
+	color: #333;
+	line-height: 26px;
+}
+.advantage .advantage_device .wrap_con dl dt{
+	height: 240px;
+	width: 100%;
+}
+.advantage .advantage_device .wrap_con dl dt img{
+	width: 100%;
+	transition: all .3s;
+}
+.advantage .advantage_device .wrap_con dl dt:hover img{
+	box-shadow: 4px 6px 8px 0px rgba(7,17,27,.1);
+}
+.advantage .advantage_device .wrap_con dl dd{
+	height: 57px;
+	font-size: 14px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.advantage .advantage_exercise{
+	width: 1200px;
+	margin: 0px auto 60px auto;
+	overflow: hidden;
+	padding-top: 42px;
+}
+.advantage .advantage_exercise .title {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.advantage .advantage_exercise .title h1{
+    font-size: 28px;
+    color: #333;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.advantage .advantage_exercise .con ul{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.advantage .advantage_exercise .con ul li{
+	width: 23%;
+	margin: 0px 1%;
+	float: left;
+	position: relative;
+}
+.advantage .advantage_exercise .con ul li a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	overflow: hidden;
+}
+.advantage .advantage_exercise .con li a img{
+	width: 100%;
+	transition: all .4s;
+}
+.advantage .advantage_exercise .con li a:hover img{
+	transform: scale(1.2, 1.2);	
+}
+.advantage .advantage_exercise .con li .bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 20px;
+	color: #fff;
+	padding-bottom: 10px;
+	background: #000\9;
+}
+.advantage .advantage_exercise .con li .bottom h4{
+    font-size: 14px;
+    text-align: center;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.advantage .advantage_work{
+	background: #f6f6f6;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 50px;
+}
+.advantage .advantage_work .pic{
+	position: relative;
+    width: 1000px;
+    padding-bottom: 80px;
+	margin: 120px auto 0px;
+}
+.advantage .advantage_work .pic ul{
+	height: 150px;
+	width: 1000px;
+	margin: 98px auto 0 auto;
+	text-align: center;
+	font-size: 0;
+	letter-spacing: -4px;
+	word-spacing: -4px;
+}
+.advantage .advantage_work .pic ul li{
+	float: left;
+}
+.advantage .advantage_work .pic ul li.con{
+	display: inline-block;
+	width: 185px;
+	height: 150px;
+	background: #e8e8e8;
+	border-radius: 8px;
+	font-size: 14px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+	position: relative;
+}
+.advantage .advantage_work .pic ul li.con:hover{
+	box-shadow: 4px 4px 6px 0px rgba(7,17,27,.2);
+}
+.advantage .advantage_work .pic ul li.tip{
+	width: 76px;
+	height: 150px;
+}
+.advantage .advantage_work .pic ul li img.icon{
+	width: 85px;
+	height: 85px;
+	position: absolute;
+	left: 50%;
+	margin-left: -42px;
+	top: -52px;
+}
+.advantage .advantage_work .pic ul li h3{
+	line-height: 30px;
+	text-align: center;
+	color: #878a90;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 34px 0 0 0;
+}
+.advantage .advantage_work .pic ul li p{
+	line-height: 13px;
+	text-align: center;
+	color: #878a90;
+	font-size: 13px;
+	line-height: 19px;
+}
+

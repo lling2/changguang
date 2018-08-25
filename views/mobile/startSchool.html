@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<#include "common.html" />
+<head lang="en">
+    <base id="basePath" href="${basePath}"/>
+    <meta charset="UTF-8">
+    <title>四海兴唐</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <link href="${basePath}/resources/assets/mobile/common/css/app.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="${basePath}/resources/assets/mobile/common/js/appConfig.js"></script>
+    <script type="text/javascript" src="${basePath}/resources/assets/mobile/drop/dropload.min.js"></script>
+    <link href="${basePath}/resources/assets/mobile/drop/dropload.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <@header/>
+    <!-- 内容 -->
+    <div class="o_content" style="margin-top:55px;">
+        <div class="o_tit" id="o_tit" onclick="o_menuB()">
+            <p id="clsDict" data-id="${clsDictId?default('')}">${clsDictName}开课信息 <span><img src="${basePath}/resources/imgs/icons/menu_down.png" alt="" id="o_img" /></span></p>
+        </div>
+        <ul class="o_menu">
+            <li><a href="${basePath}/startSchool">全部</a></li>
+            <#list classDicts as cds>
+            <li><a href="${basePath}/startSchool?clsDictId=${cds.classDictId}">${cds.classDictName}</a></li>
+            </#list>
+        </ul>
+        <div class="bs-example" style="margin-top:20px;">
+	        <script type="text/html" id="startSchool">
+            {{#startSchools}}
+	        <div class="col-sm-6 col-md-4">
+	            <div class="thumbnail">
+	                <div class="caption">
+	                    <h4>{{ext3}}/{{ext5}}</h4>
+	                    <h5>开课日期：{{startSchoolStartDt}}</h5>
+	                    <span class="gray_color font14 pr15">{{ext4}}</span><span class="gray_color font14">{{ext1}}</span><span class=" fr font14">{{ext2}}</span>
+	                </div>
+	            </div>
+        	</div>
+            {{/startSchools}}
+	        </script>
+       </div>
+    </div>
+    <script>
+	    var startSchoolTemp = $("#startSchool").html().trim();
+	    Mustache.parse(startSchoolTemp);
+		$(function(){
+			var offset = 0;
+		    var size = 12;
+		    var clsDictId = $("#clsDict").attr("data-id");
+		    $('#bs-example').dropload({
+		    	scrollArea : window,
+		        loadDownFn : function(me){
+		            $.ajax({
+		                type: 'GET',
+		                url: '/startSchoolJson?offset='+offset+"&clsDictId="+clsDictId,
+		                dataType: 'json',
+		                success: function(data){
+		                	if(data.startSchools.length>0){
+		                	var result = Mustache.render(startSchoolTemp, data);
+		                    }else{
+		                        me.lock();
+		                        me.noData();
+		                        $('.bs-example').append('<div class="dropload-noData">暂无数据</div>')
+		                    }
+		                    $('.bs-example').append(result);
+	                        $(".dropload-down").hide();
+	                        me.resetload();
+		                },
+		                error: function(xhr, type){
+		                    alert('Ajax error!');
+		                    me.resetload();
+		                }
+		            });
+		            offset = offset + size;
+		        }
+		    });
+		});
+      </script>
+</body>
+</html>

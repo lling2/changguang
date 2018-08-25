@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<#include "common.html" />
+<head lang="en">
+    <base id="basePath" href="${basePath}"/>
+    <meta charset="UTF-8">
+    <title>四海兴唐</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <script type="text/javascript" src="${basePath}/resources/assets/mobile/common/js/appConfig.js"></script>
+</head>
+<style>
+    body { background:#fff;}
+</style>
+<body>
+    <@header/>
+    <div class="course_detail" style="margin-top:45px;">
+        <div>
+            <div>${co.className}</div>
+            <ul class="c_d_cTip">
+                <li>发布：四海兴唐</li>
+                <li>时间：${co.classDt}</li>
+            </ul>
+            <p>${co.classDesc}</p>
+        </div>
+    </div>
+ </body>
+</html>

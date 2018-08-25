@@ -1,0 +1,244 @@
+.gratitude_banner{
+	height: 420px;
+	width: 100%;
+	overflow: hidden;
+}
+.gratitude_banner .banner{
+	height: 100%;
+	position: inherit;
+	width: 100%;
+	background: url(../../../../imgs/student/banner.jpg) no-repeat center bottom;
+	background-size: cover;
+}
+.gratitude_contents{
+	background-color: #fff;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.gratitude_contents .wrap{
+	width: 1200px;
+	padding-top: 100px;
+	margin: 0 auto;
+}
+.gratitude_contents .wrap .gratitude_contents_item{
+	width: 560px;
+	height: 250px;
+	border-top: 1px solid rgba(0, 0, 0, .06);
+	border-bottom: 0px solid rgba(0, 0, 0, 0);
+	margin: 0 40px 15px 0;
+	transition: all 0.3s ease-out 0s;
+}
+.gratitude_contents .gratitude_contents_item:hover{
+	border-color: #A1A1A1;
+}
+.gratitude_contents .gratitude_contents_item{
+	float: left;
+}
+.gratitude_contents .gratitude_contents_item a{
+	overflow: hidden;
+	z-index: 1;
+	transition: all 0.3s ease-out 0s;
+	float: right;
+}
+.gratitude_contents .gratitude_contents_item a .pic{
+	margin-right: 50px;
+	margin-top: 30px;
+}
+.gratitude_contents .gratitude_contents_item a .pic img{
+	transition: all 0.3s ease-out 0s;
+}
+.gratitude_contents .gratitude_contents_item:hover a .pic img{
+	margin-top: 20px;
+}
+.gratitude_contents_item a{
+	display: block;
+	position: relative;
+}
+.gratitude_contents .gratitude_contents_item .info{
+	cursor: pointer;
+}
+.gratitude_contents .gratitude_contents_item .info .title{
+	display: inline-block;
+	font-size: 18px;
+    color: #484848;
+    margin-right: 20px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.gratitude_contents .gratitude_contents_item .info{
+	float: left;
+    width: 308px;
+    height: 140px;
+    transition: all .6s cubic-bezier(.215, .61, .355, 1);
+    text-align: left;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+.gratitude_contents .gratitude_contents_item:hover .title{
+	margin-top: 20px;
+}
+.gratitude_contents_item .info{
+	margin-top: 33px;
+    text-align: center;
+}
+.gratitude_contents .gratitude_contents_item:hover .info{
+    margin-top: 30px;
+}
+
+.gratitude_contents .gratitude_contents_item .info .subtitle{
+	font-size: 12px;
+	color: #999;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-style: normal;
+}
+
+.gratitude_contents .gratitude_contents_item .info .discription{
+	font-size: 12px;
+    color: #757575;
+    line-height: 24px;
+    height: 72px;
+    margin-top: 0px;;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 3;
+  	-webkit-box-orient: vertical;
+}
+
+/*就业感言详情*/
+.gratitude_modal-mask{
+	position: fixed;
+	z-index: 7000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	background: rgba(0, 0, 0, 0.8);
+	filter: alpha(opacity=80);
+	opacity: 0.80;
+	display: none;
+}
+.gratitude_details{
+	width: 624px;
+    height: 307px;
+    background: #fff;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    border-radius: 5px;
+}
+.gratitude_details .gratitude_contents_item a{
+	margin-right: 50px;
+	margin-top: 30px;
+	float: right;
+}
+.gratitude_details .gratitude_contents_item a .pic img{
+	width: 180px;
+	height: 180px;
+	margin-top: 30px;
+}
+.gratitude_details .gratitude_contents_item a{
+	display: block;
+	position: relative;
+}
+.gratitude_details .gratitude_contents_item .info .title{
+	display: inline-block;
+	font-size: 18px;
+    color: #484848;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px!important;
+}
+.gratitude_details .gratitude_contents_item .info .subtitle{
+	margin: 0px!important;
+	font-size: 14px;
+	margin: 5px 0px;
+}
+.gratitude_details .gratitude_contents_item .info{
+	float: left;
+    width: 394px;
+    text-align: left;
+    margin-top: 30px;
+    padding: 0 45px;
+}
+.gratitude_details .gratitude_contents_item .info .discription{
+	font-size: 12px;
+	color: #949494;
+	margin-top: 5px;
+	line-height: 18px;
+	overflow: hidden;
+	height: 108px;
+	overflow: hidden;
+}
+.gratitude_details .off{
+	display: block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: -12px;
+	top: -12px;
+	background: #f0f0f0;
+	font-size: 16px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;    
+}
+.gratitude_paging{
+	width:100%;
+	height:45px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.gratitude_paging .active{
+	background: #F0F0F0;
+}
+.gratitude_paging a{
+	font-size: 16px;
+	padding:10px 13px;
+	line-height: 30px;
+	margin:0px 15px 0px 0px;
+	color:#000;
+	cursor:pointer;
+	list-style: none;
+	background-color: #ffffff;
+	border: solid 1px #F0F0F0;
+	color: #004B54;
+}
+.gratitude_paging .prev{
+	background: green!important;
+	color: #ffffff!important;
+}
+.gratitude_paging a:hover{
+	background-color: #f0f0f0;
+}
+.gratitude_contents_footer{
+	width: 100%;
+	height: 260px; 
+	background: #f0f0f0; 
+	margin-top: 40px;
+	padding: 30px 0px;
+}
+.gratitude_contents_footer h2{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 32px 0 0 0;
+	color: #242629;
+	font-size: 35px;
+	line-height: 90px;
+	text-align: center;
+}
+.gratitude_contents_footer p{
+	line-height: 20px;
+	color: #a1a3a7;
+	font-size: 15px;
+	text-align: center;
+	padding: 0;
+	margin-top: 5px;
+}
+
+

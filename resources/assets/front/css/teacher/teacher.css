@@ -1,0 +1,54 @@
+.teacher .teacher_banner{ height: 425px;width: 100%; background: url(../../../../imgs/teacher/teacherRecruitBanner.jpg) no-repeat;background-position: center top;}
+.teacher .teacher_banner .txt{color: #fff; text-align: center; height: 105px;padding-top: 160px;font-size: 20px;}
+.teacher .teacher_banner .txt h1{color: #fff;}
+.teacher .teacherinfo{ width: 1160px; margin:0 auto;border-bottom: 2px solid #eaeaea;}
+.teacher .teacherinfo ul{overflow: hidden; margin: 70px 0 32px -25px;}
+.teacher .teacherinfo ul li{width: 33.3%; float: left; padding: 0 40px 36px; text-align: center;}
+.teacher .teacherinfo ul li img{margin-left: 50px; max-width: 100%;}
+.teacher .teacherinfo .infos{text-align: center;border-bottom: 1px dashed #ddd;}
+.teacher .teacherinfo .infos:last-child{border-bottom: none;}
+.teacher .teacherinfo .infos strong{font-size:24px; color: #333; padding: 24px 0 12px; font-weight: normal;display: block;}
+.teacher .teacherinfo .infos span{font-size: 16px; display: block;font-weight: normal; color: #666;}
+.teacher .teacherinfo .infos p{line-height: 1.6;font-size: 14px;color: #999; margin: 22px 0 16px;}
+.teacher .teacherinfo ul li>span{font-size: 16px; margin-top: 18px; display: block;color: #999;}
+.teacher .teacherinfo .infos .share-ibox{ overflow: hidden; height: 40px; margin: 22px 26px 16px;}
+.teacher .teacherinfo .infos .share-ibox .icon-list span{cursor:pointer;width: 40px; height: 40px; margin-left: 15px; background: url(../../../../imgs/teacher/teacherRecruiticon.png) no-repeat;float: left;}
+.teacher .teacherinfo .infos .share-ibox .icon-list .icon-qzone{background-position: -55px 0;}
+.teacher .teacherinfo .infos .share-ibox .icon-list .icon-wechat{background-position: -110px 0;}
+.teacher .teacherinfo .infos .share-ibox .icon-list .icon-sina{background-position: -165px 0;}
+.teacher .teacherinfo .infos .share-ibox .icon-list .icon-qq:hover{background-position: 0 -41px;}
+.teacher .teacherinfo .infos .share-ibox .icon-list .icon-qzone:hover{background-position: -55px -41px;}
+.teacher .teacherinfo .infos .share-ibox .icon-list .icon-wechat:hover{background-position: -110px -41px;}
+.teacher .teacherinfo .infos .share-ibox .icon-list .icon-sina:hover{background-position: -165px -41px;}
+.teacher .teacherinfo>i{width: 50px; height: 25px; text-indent: -9999px; display: block; margin: 0 auto; margin-bottom: -25px; position: relative; background: url(../../../../imgs/teacher/teacherRecruiticon.png) -1px -86px no-repeat;}
+.teacher .teacheraply{ text-align: center; padding: 70px 0;}
+.teacher .teacheraply>a{ width: 210px; height: 54px; line-height: 54px;display: block;font-size: 16px;color: #fefefe; background:#5ecfba; margin: 22px auto 0; border-radius: 3px;}
+.teacher .teacheraply>a:hover{background: #2db8a6;}
+.teacher .gold-teacher{ padding-bottom: 40px; background: #f5f5f5; overflow: hidden; height: auto;text-align: center;} 
+.teacher .gold-teacher h2{ margin:50px 0 32px;}
+.teacher .gold-teacher .gold-slide{border-bottom: 1px solid #ececec;padding-bottom: 30px;overflow: hidden;width: 1072px; margin: 0 auto 30px;}
+.teacher .gold-teacher .gold-slide .tempWrap{overflow: hidden;width: 1072px;position: relative;}
+.teacher .gold-teacher .gold-slide .tempWrap ul{ width: 2200px;position: relative;}
+.teacher .gold-teacher .gold-slide .tempWrap ul li{ float: left; margin-right:38px;}
+.teacher .gold-teacher .gold-slide .tempWrap .inner_box{position:relative;width: 230px; height: 290px; margin-bottom: 27px; cursor: pointer;}
+.teacher .gold-teacher .gold-slide .tempWrap .hover-card{padding: 30px 18px 46px;opacity:0;color:#fff;position: absolute; left: 0; top: 0; border-radius: 6px; background: #000;}
+.teacher .gold-teacher .gold-slide .tempWrap .hover-card h4{ margin-bottom: 10px;font-size: 18px;color: #fff;}
+.teacher .gold-teacher .gold-slide .tempWrap .hover-card small{font-size: 14px;color: #fff; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.5);display: block; margin-bottom: 10px;}
+.teacher .gold-teacher .gold-slide .tempWrap .hover-card p{font-size: 12px; line-height: 21px; height: 66px;overflow: hidden; margin-bottom: 30px;}
+.teacher .gold-teacher .gold-slide .tempWrap .hover-card >a{display: block;width:170px; height: 40px; line-height: 36px; margin: 0 auto; border-radius: 100px; border:2px solid #01c26f;color:#01c26f; font-size: 14px; text-align: center;}
+.teacher .gold-teacher .gold-slide .tempWrap .hover-card >a:hover{border:2px solid #01c26f;background:#01c26f; color: #fff;transition: all .3s; }
+.teacher .gold-teacher .gold-slide .tempWrap h5{color: #01C26F; line-height: 26px;}
+.teacher .gold-teacher .gold-slide .tempWrap p{color: #969696;}
+.teacher .gold-teacher .gold-slide .tempWrap .teach-icon{ position: absolute; left: 0;bottom: 60px; margin-left: 78px;width: 74px; height: 74px;opacity: 0 ;}
+.teacher .gold-teacher .gold-slide .tempWrap .teach-icon img{max-width: 100%;}
+.teacher .gold-teacher .gold-slide .tempWrap .hover-mask:hover{display:block;background: rgba(0,0,0,0.85);transition: all .1s ;}
+.teacher .gold-teacher .gold-slide .tempWrap .hover-card:hover{opacity:0.9;transition: all .1s ;}
+.teacher .gold-teacher .gold-slide .tempWrap .inner_box:hover > .hover-card > .teach-icon{opacity: 1; bottom: -32px; transition: all 1s ;}
+.teacher .gold-teacher .gold-tab{height: 6px;width: 1072px; margin: 0 auto;text-align: right;font-size: 0;}
+.teacher .gold-teacher .gold-tab li{margin-left: 7px; width: 32px; height: 6px; cursor: pointer;display: inline-block;vertical-align:middle;background: #e3e3e3;}
+.teacher .gold-teacher .gold-tab .on{background-color: #01c26f;}
+.teacher .teacher-join{ margin-top: 60px;overflow: hidden;padding: 78px 0; text-align: center;}
+.teacher .teacher-join strong{font-size: 40px;color: #666;font-weight: normal;display: block;}
+.teacher .teacher-join b{font-size: 20px;color: #666;display: block; margin-top: 18px;}
+.teacher .teacher-join>a{ width: 210px; height: 54px; line-height: 54px;display: block;font-size: 16px;color: #fefefe; background:#5ecfba; margin: 22px auto 0; border-radius: 3px;}
+.teacher .teacher-join>a:hover{background: #2db8a6;}
